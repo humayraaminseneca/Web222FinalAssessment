@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=90%, initial-scale=1.0" />
+    <title>HUMAYRA AMIN</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="menue" id="navBar">
+  <a href="" class="active">HUMAYRA AMIN</a>
+  <a href="index.html">Home</a>
+  <!-- <a href="about.html">About</a> -->
+  <a href="honesty.html">About me</a>
+  <a href="contact.html">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="MobileMenue()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="container mt-5">
+ 
+	<div class="row">
+			<h1>Contact Me</h1>
+	</div>
+	<div class="row">
+			<h4 style="text-align:center">I'd love to hear from you!</h4>
+	</div>
+	<div class="row input-container">
+        <form method="POST" action="https://httpbin.org/post ">
+
+    
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required name="name"/>
+					<label>Name</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="email" required name="email" />
+					<label>Email</label> 
+				</div>
+			</div>
+			<div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required name="address" />
+					<label>Address</label> 
+				</div>
+			</div>
+            <div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" required name="city" />
+					<label>City</label> 
+				</div>
+			</div>
+            <div class="col-xs-12">
+				<div class="styled-input wide">
+					<input type="text" name="postalCode" pattern="^(?!.*[DFIOQU])[A-VXY][0-9][A-Z] ?[0-9][A-Z][0-9]$" required />
+					<label>Postal Code</label> 
+				</div>
+			</div>
+            <div>
+                <label for="Type">Type of Query:</label>
+                <div>
+                    <input type="radio" name="option" id="option1" required="">
+                    <label for="Question">Question:</label>
+
+                    <div class="reveal-if-active">
+                        <label for="question"></label>
+                        <textarea name="Question" id="question" cols="60" rows="2" maxlength="100" placeholder="Question..." class="require-if-active" data-require-pair="#options"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="radio" name="option" id="option2">
+                    <label for="Comment">Comment:</label>
+
+                    <div class="reveal-if-active">
+                        <label for="comment"></label>
+                        <textarea name="Comment" id="comment" cols="60" rows="2" maxlength="100" placeholder="Comment..." class="require-if-active" data-require-pair="#options"></textarea>
+                    </div>
+                </div>
+
+                <div>
+                    <input type="radio" name="option" id="option3">
+                    <label for="Hiring">Hiring</label>
+
+                    <div class="reveal-if-active">
+                        <label for="hiring">Hourly Rate: $</label>
+                        <input type="number" name="Hourly rate" id="rate" autofocus="" min="0" step="0.25" placeholder="Hourly Rate" class="require-if-active" data-require-pair="#options">
+                    </div>
+                </div>
+            </div>
+			<div class="col-xs-12">
+				<div class="btn-lrg submit-btn">Send Message</div>
+			</div>
+        </form>
+	</div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
